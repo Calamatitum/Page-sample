@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="animate.css">	
+	<meta charset="utf-8">
+	<title>Орехи и специи</title>
+	<link rel="stylesheet" type="text/css" href="fullpage/fullpage.css"/>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<button class="button button-menu" onclick="myFunction1()">
+			<i class="fas fa-th"></i>
+			<span class="menu-text">Меню</span>
+		</button>	
+		<button class="button button-message">
+			<i class="fas fa-envelope"></i>
+			<span class="menu-text">Сообщение</span>
+		</button>			
+		<a href="https://www.vk.com/" class="social vk animated" id="vk">
+			<img src="pictures/vk.png">
+			<span>Вконтакте</span>
+		</a>		
+		<a href="https://www.instagram.com/" class="social inst" id="inst">
+			<img src="pictures/inst.png">
+			<span>Instagram</span>
+		</a>		
+		<a href="tel:+79229953909" class="tel" id="tel">8 922 995 39 09</a>
+		<a href="mailto:hello@orehispecii.ru" class="mail" id="mail">hello@orehispecii.ru</a>
+	</header>
+	<div class="animated background-nuts-bottom">
+	</div>
+	<div class="animated background-nuts-fly">
+	</div>	
+	<div class="animated menu-page" id="menu-page">
+		<table class="menu-items" id="myMenu">
+			<tr>
+				<td data-menuanchor="page1" class="menu-item" onclick="removeMenu()">
+					<a href="#page1">
+						<img src="pictures/1m.svg"><br>
+						<span>Франшиза</span>
+					</a>
+				</td>
+				<td data-menuanchor="page2" class="menu-item menu-item-shop" onclick="removeMenu()">
+					<a href="#page2">
+						<img src="pictures/2m.svg"><br>
+						<span>Магазины</span>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td data-menuanchor="page3" class="menu-item" onclick="removeMenu()">
+					<a href="#page3">
+						<img src="pictures/4m.svg"><br>
+						<span>Вакансии</span>
+					</a>
+				</td>
+				<td data-menuanchor="page4" class="menu-item menu-item-gift" onclick="removeMenu()">
+					<a href="#page4">
+						<img src="pictures/5m.svg"><br>
+						<span>Мастерская<br> подарков</span>
+					</a>
+				</td>
+			</tr>
+		</table>
+		<span class="copyright">© 2015-2018 OOO «Орехи и специи»</span>
+	</div>
+	<script>
+		function myFunction1() {
+			document.getElementById("menu-page").classList.toggle("menu-page-active");			
+			document.getElementById("menu-page").classList.add("fadeIn");		
+			document.getElementById("vk").	classList.toggle("color-dark");
+			document.getElementById("inst").	classList.toggle("color-dark");
+			document.getElementById("tel").		classList.toggle("color-dark");
+			document.getElementById("mail").	classList.toggle("color-dark");
+		}
+		function removeMenu() {
+			document.getElementById("menu-page").classList.remove("menu-page-active");			
+			document.getElementById("vk").
+			classList.remove("color-dark");
+			document.getElementById("inst").
+			classList.remove("color-dark");
+			document.getElementById("tel").
+			classList.remove("color-dark");
+			document.getElementById("mail").
+			classList.remove("color-dark");
+		}
+	</script>
+	<div id="fullpage">		
+		<div class="section" data-anchor="page1">
+			<div class="main-page-content">
+				<img src="pictures/logo.png" class="logo">
+				<div class="text">
+					<p>Федеральная торговая розничная сеть по продаже<br> отборных орехов, сухофруктов и специй</p>
+					<div>
+						<div class="name-and-shop">
+							<span>Киров<br><span class="shop-amount">8 магазинов</span></span>
+						</div>
+						<div class="name-and-shop">	
+							<span>Нижний Новгород<br><span class="shop-amount">1 магазин</span></span>
+						</div>
+						<div class="name-and-shop">
+							<span>Москва<br><span class="shop-amount">1 магазин</span></span>
+						</div>
+					</div>
+				</div>
+				<button class="button-info">Подробнее о франшизе</button>
+				<img src="pictures/mouse.svg" class="mouse-icon">
+			</div>			
+		</div>
+		<div class="section" data-anchor="page2">
+			<div class="shop-page-content">	
+				<div class="animated four-flying-nuts">	
+					<img src="pictures/image8.png" class="nut left-nut">
+					<img src="pictures/image7.png" class="nut center-bottom-nut">	
+					<img src="pictures/image9.png" class="nut right-bottom-nut">
+					<img src="pictures/image10.png" class="nut right-top-nut">
+				</div>
+				<img src="pictures/name_v.png" class="shop-name">
+				<div class="text-info-shops">
+					<p class="kirov-shop-amount"><span class="number7">7</span> точек за 3 года в городе Киров</p>
+					<i class="fas fa-map-marker-alt"></i><a href="#" class="address-link">Смотреть адреса магазинов</a>
+					<p class="p-info">Взнос на открытие: 250 тыс. рублей<br>Оккупаемость: от 3 месяцев</p>
+					<button class="button-estimate">Запросить смету</button>
+					<p class="text-plans">В 2019 году планируется открытие<br>ещё 6 магазинов</p>
+				</div>				
+			</div>
+		</div>
+		<div class="section" data-anchor="page3">
+			<div class="info-page">
+				<div class="background-spices-top">
+				</div>
+				<div class="background-spices-bottom">
+				</div>
+				<img src="pictures/name_v.png" class="shop-name">
+				<p class="shop-description">Федеральная торговая розничная сеть по<br> продаже отборных орехов, сухофруктов и специй<br> оптом и в розницу</p>
+				<div class="info-blocks-section3">
+					<div class="info-block">
+						<div class="img-for-info-block">
+							<img src="pictures/friendship.png" class="info-block-img">
+						</div>					
+						<p>Наши покупатели-сторонники<br> правильного питания, любители<br> полезных сладостей и пряных блюд.</p>		
+					</div>
+					<div class="info-block">
+						<div class="img-for-info-block">
+							<img src="pictures/videocall.png" class="info-block-img">
+						</div>
+						<p>Автоматизированный бизнес<br> помогает управлять всеми<br> аспектами бизнеса.</p>
+						<button class="more-about">Подробнее о франшизе</button>
+					</div>
+					<div class="info-block">
+						<div class="img-for-info-block">
+							<img src="pictures/icon.png" class="info-block-img">	
+						</div>
+						<p>Более 1000 наименований<br>постоянно обновляемого<br> ассортимента.</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="section" data-anchor="page4">
+			<div class="franchising-page">
+				<img src="pictures/name_v.png" class="shop-name">
+				<div class="franchising-text">
+					<img src="pictures/franchising.png">
+					<p>Сеть магазинов Орехи и специи специализируется на продаже<br> сухофруктов, орехов, сладостей, цукатов, специй, пряностей и<br> других натуральных продуктов со всего мира</p>
+					<button class="button-detailed">Подробнее</button>
+				</div>
+				<div class="background-leaves">
+				</div>
+			</div>
+		</div>		
+	</div>
+	<script type="text/javascript" src="fullpage/fullpage.js"></script>
+	<script type="text/javascript">
+		new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,	
+	anchors: ['page1', 'page2', 'page3', 'page4'],
+	menu: '#myMenu',
+	navigation: true,
+	scrollHorizontally: true,
+	scrollingSpeed: 1000,
+	onLeave: function(origin, destination, direction){
+		var leavingSection = this;
+
+		//after leaving section 2
+		if(origin.index == 0 && direction =='down'){
+			document.getElementsByClassName('background-nuts-bottom')[0].classList.remove('slideInUp');
+			document.getElementsByClassName('background-nuts-bottom')[0].classList.add('slideOutDown');
+		}
+
+		else if(destination.index == 0 && direction == 'up'){
+			document.getElementsByClassName('background-nuts-bottom')[0].classList.remove('slideOutDown');
+			document.getElementsByClassName('background-nuts-bottom')[0].classList.add('slideInUp');
+		}
+		var leavingSection = this;
+
+		//after leaving section 2
+		if(origin.index == 0 && direction =='down'){
+			document.getElementsByClassName('background-nuts-fly')[0].classList.remove('fadeIn');
+			document.getElementsByClassName('background-nuts-fly')[0].classList.add('fadeOut');
+		}
+
+		else if(destination.index == 0 && direction == 'up'){
+			document.getElementsByClassName('background-nuts-fly')[0].classList.remove('fadeOut');
+			document.getElementsByClassName('background-nuts-fly')[0].classList.add('fadeIn');
+		}
+	}
+});
+</script>
+</body>
+</html>
